@@ -12,7 +12,6 @@ class Main(QMainWindow):
         self.ui = loader.load("form.ui",None)
         self.ui.show()
         self.ui.btn_add.clicked.connect(self.add)
-        self.ui.exit.triggered.connect(exit)
         self.ui.help.triggered.connect(self.info)
         self.flag = 0
         self.read_from_Database()
